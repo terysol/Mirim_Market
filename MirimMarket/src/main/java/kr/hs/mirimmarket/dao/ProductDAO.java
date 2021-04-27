@@ -6,7 +6,7 @@ import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import kr.hs.mirimmarket.dto.Product;
+import kr.hs.mirimmarket.dto.ProductDTO;
 
 @Repository
 public class ProductDAO {
@@ -17,9 +17,9 @@ public class ProductDAO {
     @Autowired
     private ProductMapper productMapper;
     
-    public List<Product> getProductList(){
+    public List<ProductDTO> getProductList(){
     	productMapper = sqlSession.getMapper(ProductMapper.class);
-    	List<Product> productDAO = productMapper.getProductList();
+    	List<ProductDTO> productDAO = productMapper.getProductList();
     	return productDAO;
     }
 }

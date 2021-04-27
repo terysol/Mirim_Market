@@ -4,12 +4,8 @@
 
 <mapper namespace="kr.hs.mirimmarket.dao.ProductMapper"><!--namespace를 통해 UserDAO와 연결합니다. -->
   		
-  <select id="getProductList" resultType="kr.hs.mirimmarket.dto.Product"><!-- selectUsers()메서드를 호출하면 실행할 SELECT문이며, 
-						UserDTO 객체를 파라미터로 받아, UserDTO객체를 반환합니다.-->
+  <select id="getProductList" resultType="kr.hs.mirimmarket.dto.ProductDTO">
   	select * from register2
-    <!-- <if test='country != null and country != ""'>만약 파라미터에 country가 있다면 SQL문에 WHERE절을 추가합니다.
-    	WHERE country = #{country}
-    </if> -->
   </select>
 
 </mapper>

@@ -14,7 +14,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import kr.hs.mirimmarket.dao.ProductMapper;
 import kr.hs.mirimmarket.dao.ProductService;
-import kr.hs.mirimmarket.dto.Product;
+import kr.hs.mirimmarket.dto.ProductDTO;
 
 
 @RestController
@@ -27,7 +27,7 @@ public class JSPController {
 	@RequestMapping("/main")
 	public ModelAndView main() {
 		ModelAndView model =new ModelAndView();
-		List<Product> productlist=service.getProductList();
+		List<ProductDTO> productlist=service.getProductList();
 		model.addObject("productlist",productlist);
 		model.setViewName("main");
 		return model;

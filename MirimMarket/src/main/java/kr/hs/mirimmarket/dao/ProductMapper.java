@@ -2,10 +2,11 @@ package kr.hs.mirimmarket.dao;
 
 import java.util.List;
 
-import org.springframework.stereotype.Component;
+import org.apache.ibatis.annotations.Mapper;
 
-import kr.hs.mirimmarket.dto.Product;
+import kr.hs.mirimmarket.dto.ProductDTO;
+
 
 public interface ProductMapper {
-	public List<Product> getProductList();
+	public List<ProductDTO> getProductList();
 }

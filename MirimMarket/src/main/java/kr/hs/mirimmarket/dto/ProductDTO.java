@@ -2,7 +2,7 @@ package kr.hs.mirimmarket.dto;
 
 import java.util.Date;
 
-public class Product {
+public class ProductDTO {
 	private int seq;
 	private String name;
 	private String title;
