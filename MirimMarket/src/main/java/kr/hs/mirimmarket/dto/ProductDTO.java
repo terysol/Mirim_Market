@@ -2,9 +2,9 @@ package kr.hs.mirimmarket.dto;
 
 import java.util.Date;
 
-public class Product {
-	private int seq;
-	private String name;
+public class ProductDTO {
+	private int seq;					// 제품 고유 번호
+	private String name;				// 제품 이름
 	private String title;
 	private String category;
 	private String grade;
