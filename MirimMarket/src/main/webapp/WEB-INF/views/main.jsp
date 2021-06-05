@@ -1,9 +1,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@page import="java.util.List"%>
-<% request.setCharacterEncoding("utf-8"); %>
-
+<%-- <%@ include page="/menuBar.jsp" %> --%>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -62,6 +60,7 @@
 		    }
 		  </script>
 	</head>
+<<<<<<< HEAD
 	<body>  
 		<span id="name"></span> 
 		<button id="loginBtn" onclick="
@@ -100,6 +99,14 @@
 	      	<a href="BuyProduct?seq=${p.seq }">
 	      		 ${p.title } &nbsp;${p.price}원
 		    </a><br/>	   
+=======
+	<body>
+		
+	      <c:forEach items="${productlist }" var="product">
+	      	<a href="BuyProduct.jsp?seq=${product.seq }">	
+	      	[${product.category }] &nbsp; ${product.title } &nbsp; ${product.price }<br>
+	      	</a>  
+>>>>>>> branch 'develop' of https://github.com/terysol/Mirim_Market.git
 	      </c:forEach>
 	      
 	      <a href="Registration">상품등록 </a>

@@ -3,8 +3,13 @@ package kr.hs.mirimmarket.dto;
 import java.util.Date;
 
 public class ProductDTO {
+<<<<<<< HEAD
 	private int seq;					// 제품 고유 번호
 	private String name;				// 제품 이름
+=======
+	private int seq;
+	private String name;
+>>>>>>> branch 'develop' of https://github.com/terysol/Mirim_Market.git
 	private String title;
 	private String category;
 	private String grade;
